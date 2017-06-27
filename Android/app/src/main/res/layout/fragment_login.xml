@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.junnam.nuribom.View.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        >
+        <TextView
+            android:text="회원 로그인"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:layout_marginRight="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/button_close"
+            android:src="@drawable/icon_close"
+            android:contentDescription="취소"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/layout_title"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#eeeeee"
+        android:layout_width="350dp"
+        android:layout_height="190dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/editText_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="E-mail"/>
+
+        <EditText
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:id="@+id/editText_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호"/>
+
+        <Button
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textColor="#ffffff"
+            android:text="로그인"
+            android:textSize="15dp"
+            android:background="@drawable/roundbutton_gray_solid"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

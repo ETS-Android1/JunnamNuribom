@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/nav_fav"
+            android:title="내 단골 장소" />
+        <item
+            android:id="@+id/nav_review"
+            android:title="내 후기 리스트" />
+        <item
+            android:id="@+id/nav_login"
+            android:title="로그인" />
+        <item
+            android:id="@+id/nav_join"
+            android:title="회원가입" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="로그아웃 "/>
+
+        <item
+            android:id="@+id/nav_giude"
+            android:title="앱 사용방법 " />
+        <item
+            android:id="@+id/nav_info"
+            android:title="앱 정보" />
+
+
+</menu>

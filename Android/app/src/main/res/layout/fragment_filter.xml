@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.junnam.nuribom.View.FilterFragment">
+
+    <RelativeLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        >
+        <TextView
+            android:text="검색 필터"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:layout_marginRight="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/button_close"
+            android:src="@drawable/icon_close"
+            android:contentDescription="취소"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#eeeeee"
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imageView_hospital"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src ="@drawable/filter_hospital"/>
+                <CheckBox
+                    android:text="병원"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/imageView_hospital"
+                    android:id="@+id/checkbox_hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imageView_center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src ="@drawable/filter_center"/>
+
+                <CheckBox
+                    android:text="재활 센터"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/imageView_center"
+                    android:id="@+id/checkbox_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imageView_emergency"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src ="@drawable/filter_ambulance"/>
+                <CheckBox
+                    android:text="응급의료원"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/imageView_emergency"
+                    android:id="@+id/checkbox_emergency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imageView_dentist"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src ="@drawable/filter_medicine"/>
+
+                <CheckBox
+                    android:text="약국"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/imageView_dentist"
+                    android:id="@+id/checkbox_dentist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/button_ok"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="필터적용"
+            android:background="@drawable/roundbutton_gray_solid"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

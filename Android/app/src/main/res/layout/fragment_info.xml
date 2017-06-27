@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.junnam.nuribom.View.InfoFragment">
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        >
+        <TextView
+            android:text="앱 정보"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageButton
+            android:layout_marginRight="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/button_close"
+            android:src="@drawable/icon_close"
+            android:contentDescription="취소"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/layout_title"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#eeeeee"
+        android:layout_width="350dp"
+        android:layout_height="240dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:textSize="15dp"
+            android:lineSpacingExtra="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="'전남 장애인 누리봄'은\n전남 앱 공모전 출품작으로\n전라남도 공공데이터를 활용하여\n재능기부 동아리 CGAC가\n제작하였습니다."/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

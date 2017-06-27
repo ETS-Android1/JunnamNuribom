@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.junnam.nuribom.View.DialogGuideFragment">
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        >
+        <TextView
+            android:text="앱 사용방법"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageButton
+            android:layout_marginRight="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/button_close"
+            android:src="@drawable/icon_close"
+            android:contentDescription="취소"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_below="@+id/layout_title"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/textView_guide"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:lineSpacingExtra="5dp" />
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_below="@+id/textView_guide"
+        android:id="@+id/imageView_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_button"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_button"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/button_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="#ffffff"
+            android:text="이전"
+            android:background="@drawable/roundbutton_gray_solid"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="#ffffff"
+            android:text="다음"
+            android:background="@drawable/roundbutton_gray_solid"/>
+    </LinearLayout>
+
+</RelativeLayout>
